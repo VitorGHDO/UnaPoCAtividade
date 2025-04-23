@@ -1,0 +1,3 @@
+INDEX VERSION 1.134+C:\Users\user\Desktop\Nova pasta\UnaPoC\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+417780860.index
