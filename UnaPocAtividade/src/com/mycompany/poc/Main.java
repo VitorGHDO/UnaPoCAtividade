@@ -3,6 +3,7 @@ package com.mycompany.poc;
 import cliente.Cliente;
 import contaCliente.ContaCliente;
 import faturaCliente.FaturaCliente;
+import pedidoCliente.PedidoCliente;
 
 public class Main {
 
@@ -40,6 +41,17 @@ public class Main {
 
         System.out.println(fatura2);
         System.out.printf("Fatura 2 com desconto: R$%.2f%n", fatura2.getValorComDesconto());
+        
+        
+        PedidoCliente pedido1 = new PedidoCliente(3001, cliente1, "Notebook Dell", 3500.0);
+        PedidoCliente pedido2 = new PedidoCliente(3002);
+        pedido2.setCliente(cliente2);
+        pedido2.setDescricao("Celular Samsung");
+        pedido2.setPreco(2200.0);
+
+        System.out.println("\n--- PEDIDOS ---");
+        System.out.println(pedido1);
+        System.out.println(pedido2);
 
         System.out.println("\n--- CLIENTES ---");
         System.out.println("Cliente: " + cliente1.getNome() + ", ID: " + cliente1.getId() + ", Desconto: " + cliente1.getDesconto() + "%");
