@@ -1,5 +1,7 @@
 package faturaCliente;
 
+import cliente.Cliente;
+
 public class FaturaCliente {
     private int id;
     private Cliente cliente;
